@@ -2,18 +2,19 @@
     margin: 0
 }
 /* font  */
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-.quicksand {
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700 */
+
+.quicksand-font {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
 /* header style */
-/* header{
-    
-} */
-section{
+.section1{
     width: 100%;
 
 } 
@@ -73,22 +74,55 @@ ul{
     border: none;
     padding: 16px 61px;
 }
+.h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+.p2{
+    color: rgb(254, 163, 1);
+}
+.span1{
+    color: rgb(1, 172, 253);
+}
+.p4{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 24px;
+}
+.btn2{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    border-radius: 12px;
+    border: none;
+    padding: 16px 61px;
+    margin-top: 24px;
+}
+.parent1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+}
 
 /* media query */
-@media screen and (max-width:576px) {
+@media screen and (min-width:0px) and (max-width:576px) {
     .div2, .div3{
         display: none;
     }
-    section{
-        border:0.5px solid orange ;
-        width: 100%;
-        padding: 12px 0;
-    }
-
+    
+.section1{
+    border:0.5px solid orange ;
+    
+}
     nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
+        padding: 12px 3vw;
+        margin-top: 0;
         
     }
     .div4 > img{
@@ -97,6 +131,33 @@ ul{
     }
     .p1{
         display: none;
+    }
+    .parent1{
+        
+        flex-direction: column-reverse;
+        grid-template-columns: repeat(1, 1fr);
+        
+        
+        margin: 0 3vw;
+    }
+    .parent1>img{
+        width: 100%;
+    }
+    .h1{
+        font-size: 32px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .p4{
+        font-size: 14px;
+        text-align: center;
+    }
+    .btn2{
+        font-size: 16px;
+        
+    }
+    .p5{
+        text-align: center;
     }
 }
 @media screen and (min-width:576.1px){
