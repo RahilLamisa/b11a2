@@ -1,0 +1,106 @@
+*{
+    margin: 0
+}
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.quicksand {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+/* header style */
+/* header{
+    
+} */
+section{
+    width: 100%;
+
+} 
+nav{
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+}
+.div1{
+    display: flex;
+    gap: 11px;
+    justify-content: center;
+    align-items: center;
+}
+.p1{
+    font-size: 16px;
+font-weight: 700;
+}
+ul{
+    display: flex;
+    gap: 32px;
+}
+.ul1{
+    list-style-type: none ;
+}
+.ul1 > li > a{
+    text-decoration: none;
+}
+.li1{
+    color: rgb(254, 163, 1);
+    font-weight: 700;
+    font-size: 20px;
+}
+.li2{
+    color: rgb(1, 172, 253);
+    font-weight: 500;
+    font-size: 20px;
+}
+.li3{
+    color: rgb(5, 212, 223);
+    font-weight: 500;
+    font-size: 20px;
+}
+.li4{
+    color: rgb(93, 88, 239);
+    font-weight: 500;
+    font-size: 20px;
+}
+.btn1{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    background: rgb(254, 163, 1);
+    border-radius: 12px;
+    border: none;
+    padding: 16px 61px;
+}
+
+/* media query */
+@media screen and (max-width:576px) {
+    .div2, .div3{
+        display: none;
+    }
+    section{
+        border:0.5px solid orange ;
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .div4 > img{
+        width: 30px;
+        height: 30px;
+    }
+    .p1{
+        display: none;
+    }
+}
+@media screen and (min-width:576.1px){
+    .div4{
+        display: none;
+    }
+}
